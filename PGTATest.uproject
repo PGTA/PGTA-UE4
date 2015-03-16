@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{38FA164D-4E5D-2E49-AAC0-B68465338D37}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "PGTATest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

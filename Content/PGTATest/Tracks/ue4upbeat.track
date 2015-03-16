@@ -1,0 +1,114 @@
+{
+  samples: [
+    {
+      name: "Guitar Overlay 6",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay6",
+      startTime: 16,
+      period: 12,
+      probability: 0.2,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Guitar Overlay 5",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay5",
+      startTime: 20,
+      period: 24,
+      probability: 0.2,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Guitar Overlay",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay1",
+      startTime: 16,
+      period: 12,
+      probability: 0.2,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Guitar Overlay 2",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay2",
+      startTime: 16,
+      period: 12,
+      probability: 0.2,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Guitar Overlay 3",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay3",
+      startTime: 16,
+      period: 12,
+      probability: 0.2,
+      volume: -4,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Guitar Overlay 4",
+      defaultFile: "/Game/PGTATest/Audio/guitarOverlay4",
+      startTime: 28,
+      period: 12,
+      probability: 0.2,
+      group: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Bass Overlay 2",
+      defaultFile: "/Game/PGTATest/Audio/bassOverlay2",
+      startTime: 4,
+      period: 12,
+      probability: 1,
+      volume: 2,
+      group: "ee93cabb986944eeacade41048baac77"
+    },
+    {
+      name: "Bass Overlay 3",
+      defaultFile: "/Game/PGTATest/Audio/bassOverlay3",
+      startTime: 4,
+      period: 12,
+      probability: 1,
+      volume: 2,
+      group: "ee93cabb986944eeacade41048baac77"
+    },
+    {
+      name: "Bass Overlay",
+      defaultFile: "/Game/PGTATest/Audio/bassOverlay1",
+      startTime: 4,
+      period: 12,
+      probability: 1,
+      volume: 2,
+      group: "ee93cabb986944eeacade41048baac77"
+    },
+    {
+      name: "Melody Loop",
+      defaultFile: "/Game/PGTATest/Audio/melodyLoop",
+      probability: 1,
+      group: ""
+    },
+    {
+      name: "Drum Overlay",
+      defaultFile: "/Game/PGTATest/Audio/drumOverlay1",
+      period: 28,
+      probability: 1,
+      volume: -4,
+      group: ""
+    },
+    {
+      name: "Drum Loop",
+      defaultFile: "/Game/PGTATest/Audio/drumLoop1",
+      startTime: 28,
+      probability: 1,
+      group: ""
+    }
+  ],
+  groups: [
+    {
+      name: "Guitar Overlays",
+      uuid: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Bass Overlays",
+      uuid: "ee93cabb986944eeacade41048baac77"
+    }
+  ],
+  restrictions: [
+
+  ]
+}

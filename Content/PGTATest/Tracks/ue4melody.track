@@ -1,0 +1,23 @@
+{
+  samples: [
+    {
+      name: "Melody Loop",
+      defaultFile: "/Game/PGTATest/Audio/melodyLoop",
+      probability: 1,
+      group: ""
+    }
+  ],
+  groups: [
+    {
+      name: "Guitar Overlays",
+      uuid: "8d519c0d49c24b9db3d8768ab7addd9d"
+    },
+    {
+      name: "Bass Overlays",
+      uuid: "ee93cabb986944eeacade41048baac77"
+    }
+  ],
+  restrictions: [
+
+  ]
+}
