@@ -38,7 +38,7 @@
       startTime: 16,
       period: 12,
       probability: 0.2,
-      volume: -4,
+      gain: -4,
       group: "8d519c0d49c24b9db3d8768ab7addd9d"
     },
     {
@@ -55,7 +55,7 @@
       startTime: 4,
       period: 12,
       probability: 1,
-      volume: 2,
+      gain: 2,
       group: "ee93cabb986944eeacade41048baac77"
     },
     {
@@ -64,7 +64,7 @@
       startTime: 4,
       period: 12,
       probability: 1,
-      volume: 2,
+      gain: 2,
       group: "ee93cabb986944eeacade41048baac77"
     },
     {
@@ -73,7 +73,7 @@
       startTime: 4,
       period: 12,
       probability: 1,
-      volume: 2,
+      gain: 2,
       group: "ee93cabb986944eeacade41048baac77"
     },
     {
@@ -87,7 +87,7 @@
       defaultFile: "/Game/PGTATest/Audio/drumOverlay1",
       period: 28,
       probability: 1,
-      volume: -4,
+      gain: -4,
       group: ""
     },
     {

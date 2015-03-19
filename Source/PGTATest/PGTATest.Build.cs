@@ -4,8 +4,8 @@ using UnrealBuildTool;
 
 public class PGTATest : ModuleRules
 {
-	public PGTATest(TargetInfo Target)
-	{
+    public PGTATest(TargetInfo Target)
+    {
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PGTA" });
-	}
+    }
 }

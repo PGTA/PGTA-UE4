@@ -7,50 +7,64 @@
 #include <akPGTA.h>
 #include "PGTAActor.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class PGTATEST_API APGTAActor : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
-    APGTAActor(const FObjectInitializer& ObjectInitializer);
-    virtual ~APGTAActor();
+	APGTAActor(const FObjectInitializer& ObjectInitializer);
+	virtual ~APGTAActor();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-    virtual void BeginDestroy() override;
-	
+	virtual void BeginDestroy() override;
+
 	// Called every frame
-	virtual void Tick( float DeltaSeconds ) override;
+	virtual void Tick(float DeltaSeconds) override;
+
 
 public:
-    UPROPERTY(EditAnywhere, Category = "PGTA")
-    FFilePath PrimaryTrack;
+	UPROPERTY(EditAnywhere, Category = "PGTA")
+		FFilePath PrimaryTrack;
 
-    UPROPERTY(EditAnywhere, Category = "PGTA")
-    FFilePath SecondaryTrack;
+	UPROPERTY(EditAnywhere, Category = "PGTA")
+		FFilePath SecondaryTrack;
 
-    UPROPERTY(EditAnywhere, Category = "PGTA")
-    float VolumeMultiplier;
+	UPROPERTY(EditAnywhere, Category = "PGTA")
+		FFilePath ThirdTrack;
+
+	UPROPERTY(EditAnywhere, Category = "PGTA")
+		FFilePath FourthTrack;
+
+	UPROPERTY(EditAnywhere, Category = "PGTA")
+		float VolumeMultiplier;
+
+	UFUNCTION(BlueprintCallable, Category = "PGTA")
+		void TrackTransition(AActor* actor);
 
 private:
-    static USoundWave* DecompressSoundWave(USoundWave* soundWave);
+	static USoundWave* DecompressSoundWave(USoundWave* soundWave);
 
-    HPGTATrack LoadPGTATrack(const FFilePath& track);
+	HPGTATrack LoadPGTATrack(const FFilePath& track);
 
-    void StreamingWaveUnderflow(USoundWaveStreaming* InStreamingWave, int32 SamplesRequired);
+	void StreamingWaveUnderflow(USoundWaveStreaming* InStreamingWave, int32 SamplesRequired);
 
 private:
-    UAudioComponent* m_audioComponent;
-    USoundWaveStreaming* m_streamingWave;
+	UAudioComponent* m_audioComponent;
+	USoundWaveStreaming* m_streamingWave;
 
-    TArray<USoundWave*> m_soundWaveArray;
+	TArray<USoundWave*> m_soundWaveArray;
 
-    PGTA::PGTADevice m_pgtaDevice;
-    PGTA::PGTAContext m_pgtaContext;
+	PGTA::PGTADevice m_pgtaDevice;
+	PGTA::PGTAContext m_pgtaContext;
 
-    HPGTATrack m_primaryTrack;
-    HPGTATrack m_secondaryTrack;
+	HPGTATrack m_primaryTrack;
+	HPGTATrack m_secondaryTrack;
+	HPGTATrack m_thirdTrack;
+	HPGTATrack m_fourthTrack;
+
+	int transitionIndex;
 };
