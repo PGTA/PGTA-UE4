@@ -14,6 +14,8 @@
 
 - add PGTAActor to project and configure tracks
 
+- delete existing ambient tracks for the project
+
 - Play ! every time you fly through a hoop, the track transitions to the next
 
 The pgta integration code is in PGTAActor.h/.cpp
